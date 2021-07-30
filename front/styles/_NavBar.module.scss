@@ -1,0 +1,183 @@
+
+.NavbarItems {
+  background-image: linear-gradient(to right,rgb(88, 88, 88) , rgb(151, 68, 68) 50%,rgb(27, 27, 27) 100%);
+    height: 80px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 15px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.2rem;
+    -webkit-box-shadow: 0px 40px 50px black;
+            box-shadow: 0px 40px 50px rgb(87, 87, 87);
+    z-index: 100;
+    padding : 0.5rem calc((100vw-1000px)/2);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 28px;
+  }
+  .h11{
+    font-size: 1.3rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-right: 5px;
+    color: #d8b30c;
+  }
+  
+  .navbarlogo {
+    font-family: 'Pacifico', cursive;
+    color: #f3f3f3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    justify-self: start;
+    margin-left: 15px;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  
+  .facookie {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .navmenu {
+    display: -ms-grid;
+    display: grid;
+        grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-right: 2rem;
+  }
+  
+  .navlinks {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navlinks:hover {
+    background-color: #3b3b3b;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .fabars {
+    color: #fff;
+  }
+  
+  .navlinksmobile {
+    display: none;
+  }
+  
+  .menuicon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+    .navmenu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%;
+      border-radius: 20px;
+      height: 535px;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+    .navmenu.active {
+      background-image: linear-gradient(-60deg, #e2c544 0%, #eba510 100%);
+      left: 0;
+      opacity: 0.92;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+    .navlinks {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+    .navlinks:hover {
+      background-color: #e9e9e9;
+      border-radius: 0;
+    }
+    .navbarlogo {
+      font-size: 2rem;
+      margin-top: 0.6rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .menuicon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      -webkit-transform: translate(-100%, 60%);
+              transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    .fatimes {
+      color: #fff;
+      font-size: 2rem;
+    }
+    .navlinksmobile {
+      display: block;
+      text-align: center;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      background: #383838;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+    .navlinksmobile:hover {
+      background: #fff;
+      color: #ececec;
+      -webkit-transition: 250ms;
+      transition: 250ms;
+    }
+  
+  }
+  /*# sourceMappingURL=Navbar.css.map */

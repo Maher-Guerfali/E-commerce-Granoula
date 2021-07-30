@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@mixin PlatColor($cola) {
+    background-color: $cola;
+    width: 80vw;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+        --tw-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.479), 0 1px 2px 0 rgba(0, 0, 0, 0.171);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+   
+    height: 70vh;
+    margin-top: 100px;
+    border-radius: 30px;
+  }
+  .flexr
+  {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:space-around;
+  }
+.main{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:center;
+}
+.Cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-style: solid;
+    border-radius: 10px;
+    width: 95px;
+    height: 60px;
+
+    
+}
+.BarCart{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.ShopFraise
+{
+    @include PlatColor(rgb(255, 97, 86))
+}
+.ShopKiwi
+{
+    @include PlatColor(rgb(75, 212, 68))
+}
+.ShopKhoukh
+{
+    @include PlatColor(rgb(247, 171, 58))
+}
+.Produitkh
+{
+    animation-name: float, spinn;
+animation-duration: 5s, 600ms;
+animation-delay: 600ms, 0ms; /* add this */
+animation-timing-function: ease-in-out , linear;
+animation-iteration-count: infinite, 1;
+ position: absolute;
+ width: 300px;
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+	//animation: spinn 200ms linear 1, float 5s ease-in-out infinite;
+    
+top:150px;
+ 
+    @media only screen and (max-width: 769px) {
+        width: 270px;
+       
+      
+       
+  }
+}
+.Produitki
+{
+    animation-name: float, spinn2;
+animation-duration: 5s, 600ms;
+animation-delay: 600ms, 0ms; /* add this */
+animation-timing-function: ease-in-out , linear;
+animation-iteration-count: infinite, 1;
+ position: absolute;
+ width: 300px;
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+	//animation: spinn 200ms linear 1, float 5s ease-in-out infinite;
+    
+top:150px;
+ 
+    @media only screen and (max-width: 769px) {
+        width: 270px;
+       
+      
+       
+  }
+}
+.Produitfr
+{
+    animation-name: float, spinn3;
+animation-duration: 5s, 600ms;
+animation-delay: 600ms, 0ms; /* add this */
+animation-timing-function: ease-in-out , linear;
+animation-iteration-count: infinite, 1;
+ position: absolute;
+ width: 300px;
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+	//animation: spinn 200ms linear 1, float 5s ease-in-out infinite;
+    
+top:150px;
+ 
+    @media only screen and (max-width: 769px) {
+        width: 270px;
+       
+      
+       
+  }
+}
+@keyframes float {
+    
+	0% {
+       
+		transform: translatey(0px)  rotate(0deg);
+	}
+	50% {
+		transform: translatey(-5px) rotate(6deg);
+	}
+	100% {
+		transform: translatey(0px) rotate(0deg);
+	}
+}
+
+
+@keyframes spinn {
+    from {
+        transform:rotateY(0deg)
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}
+@keyframes spinn2 {
+    from {
+        transform:rotateY(0deg)
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}
+
+@keyframes spinn3 {
+    from {
+        transform:rotateY(0deg)
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}

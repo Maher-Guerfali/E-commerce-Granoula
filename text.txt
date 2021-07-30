@@ -1,0 +1,43 @@
+https://github.com/unlight/tailwind-components#navigationheader
+
+ all tailwiins
+
+  <Link href={`/products/${product.slug}`}>
+            <a>
+              <div >
+                <div >
+                  <img src={fromImageToUrl(product.image)} />
+                </div>
+                <div >
+                  {product.name} ${twoDecimals(product.price)}
+                </div>
+              </div>
+            </a>
+          </Link>
+        </div>
+      ))}
+
+      buy button produit catalog
+
+
+
+
+      produ json
+
+
+      {id:3,name:"Granola Fraise bel louze",content:null,meta_description:"fraise bel louze",meta_title:"granoula",price:6,slug:"granola-fraise-bel-louze",
+published_at:"2021-05-12T00:40:22.438Z",
+created_at:"2021-05-12T00:40:19.522Z",
+updated_at:"2021-05-12T01:11:14.932Z",
+image:{id:3,name:"GraF.png",
+alternativeText:"","caption":"",width:728,height:800,
+formats:{thumbnail:{name:"thumbnail_GraF.png",hash:"thumbnail_Gra_F_e99c623fb0",ext:".png",
+mime:"image/png",width:142,height:156,size:29.62,path:null,
+url:"/uploads/thumbnail_Gra_F_e99c623fb0.png"},
+medium:{name:"medium_GraF.png",hash:"medium_Gra_F_e99c623fb0",ext:".png",
+mime:"image/png",width:683,height:750,size:446.63,path:null,
+url:"/uploads/medium_Gra_F_e99c623fb0.png"},small:{name:"small_GraF.png",hash:"small_Gra_F_e99c623fb0",ext:".png",mime:"image/png",
+width:455,height:500,size:214.58,path:null,url:"/uploads/small_Gra_F_e99c623fb0.png"}},
+hash:"Gra_F_e99c623fb0",ext:".png",mime:"image/png",size:380.32,url:"/uploads/Gra_F_e99c623fb0.png",previewUrl:null,
+provider:"local",provider_metadata:null,created_at:"2021-05-12T00:36:40.948Z",
+updated_at:"2021-05-12T00:36:40.973Z"},orders:[]};
